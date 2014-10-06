@@ -1,0 +1,22 @@
+.navbar.navbar-default{role: 'navigation'}
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#nav-items", 'data-toggle' => 'collapse', type: 'button'}
+        %span.sr-only Toggle Navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a{href: '/'}
+        #logo.pull-left
+          Dr.Toivo Sepp, DMD
+        .nav-header
+    .collapse.navbar-collapse#nav-items.navbar-right
+      %ul.nav.navbar-nav
+        %li
+          = link_to("Home", "#home", class: 'nav-item')
+        %li
+          = link_to("About", "#about", class: 'nav-item')
+        %li
+          = link_to("Contact", "#contact", class: 'nav-item')
+        %li
+          = link_to("Opportunity", opportunity_path, class: 'nav-item')
