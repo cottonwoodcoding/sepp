@@ -1,5 +1,14 @@
 $ ->
-  $('.curtains').curtain()
+  $('a.page-scroll').bind 'click', (e) ->
+    $anchor = $(this)
+    $('html, body').stop().animate
+      scrollTop: $($anchor.attr('href')).offset().top, 1500, 'easeInOutExpo'
+      e.preventDefault()
+
+  $('.curtains').curtain({
+    scrollSpeed: 400
+    curtainLinks: '.page-scroll'
+  })
 
   scrollorama = $.scrollorama({
     blocks: '.curtains'

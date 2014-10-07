@@ -1,4 +1,4 @@
-.navbar.navbar-default{role: 'navigation'}
+%nav.navbar.navbar-fixed-top.navbar-default{role: 'navigation'}
   .container-fluid
     .navbar-header
       %button.navbar-toggle{"data-target" => "#nav-items", 'data-toggle' => 'collapse', type: 'button'}
@@ -13,10 +13,10 @@
     .collapse.navbar-collapse#nav-items.navbar-right
       %ul.nav.navbar-nav
         %li
-          = link_to("Home", "#home", class: 'nav-item')
+          %a#home_link.page-scroll{:href => '#home_top'} Home
         %li
-          = link_to("About", "#about", class: 'nav-item')
+          %a#about_link.page-scroll{:href => '#about_top'} About
         %li
-          = link_to("Contact", "#contact", class: 'nav-item')
+          %a#contact_link.page-scroll{:href => '#contact_top'} Contact
         %li
           = link_to("Opportunity", opportunity_path, class: 'nav-item')
