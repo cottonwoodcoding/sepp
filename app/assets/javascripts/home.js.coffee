@@ -27,9 +27,17 @@ $ ->
   })
 
   scrollorama.animate('.about-content-container', {
-    delay:600, duration:900, property:'left', start:-200, end:200
+    delay:600, duration:300, property:'left', start:-200, end:50
+  })
+
+  scrollorama.animate('.about-content-container', {
+    delay:500, duration:300, property:'opacity', start:0, end:1
   })
 
   scrollorama.animate('#contact_info', {
     delay:1200, duration:500, property:'zoom', end:3
+  })
+
+  scrollorama.animate('#contact_info', {
+    delay:1200, duration:500, property:'opacity', start:0, end:1
   })
