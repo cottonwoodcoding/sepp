@@ -13,10 +13,10 @@
     .collapse.navbar-collapse#nav-items.navbar-right
       %ul.nav.navbar-nav
         %li
-          %a.page-scroll{:href => '/'} Home
+          %a#home_scroll.page-scroll{:href => '/'} Home
         %li
-          %a.page-scroll{:href => '#about_top'} About
+          %a#about_scroll.page-scroll{:href => '#about_top'} About
         %li
-          %a.page-scroll{:href => '#contact_top'} Contact
+          %a#contact_scroll.page-scroll{:href => '#contact_top'} Contact
         %li
           = link_to("Opportunity", opportunity_path, class: 'nav-item')
