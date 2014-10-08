@@ -10,6 +10,8 @@ gem 'uglifier', '>= 1.3.0'
 gem "font-awesome-rails"
 gem 'devise'
 gem 'simple_form'
+gem 'gmaps4rails'
+gem 'underscore-rails'
 
 # Makes running your Rails app easier. Based on the ideas behind 12factor.net
 gem 'rails_12factor'

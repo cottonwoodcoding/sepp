@@ -20,16 +20,46 @@
 
   %li#contact_top
     %section#contact
-      %address#contact_info
-        %strong Appletree Dentistry
-        %br
-        %span
-          16035 SW Pacific Hwy
-          Tigard, OR 97224
-        %br
-        = fa_icon 'phone', text: '(503) 620-2185'
-        %br
-        = fa_icon 'envelope'
-        = mail_to 'drsepp@frontier.com'
+      .map-panel
+        %a#show_map{href: '#'}
+          = fa_icon 'map-marker', text: 'Toggle Map'
+        #map.hidden{:style => "width: 100%; height: 250px;"}
+      .details
+        %address#contact_info.pull-left
+          %strong Appletree Dentistry
+          %br
+          %span
+            16035 SW Pacific Hwy
+          %br
+          %span
+            Tigard, OR 97224
+          %br
+          = fa_icon 'phone', text: '(503) 620-2185'
+          %br
+          = fa_icon 'envelope'
+          = mail_to 'drsepp@frontier.com'
+        .hours.pull-left
+          %table.table.table-hover
+            %thead
+              %tr
+                %th Day
+                %th Time
+            %tbody
+              %tr
+                %td Monday
+                %td 8:00 AM - 5:00 PM
+              %tr
+                %td Tuesday
+                %td 8:00 AM - 5:00 PM
+              %tr
+                %td Wednesday
+                %td 8:00 AM - 5:00 PM
+              %tr
+                %td Thursday
+                %td 8:00 AM - 5:00 PM
+              %tr
+                %td Friday
+                %td 8:00 AM - 4:00 PM
+
 
 
