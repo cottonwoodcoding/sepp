@@ -15,7 +15,7 @@ $ ->
   })
 
   scrollorama.animate('.home-content', {
-    delay:200, duration:200, property:'left', end:-860
+    duration:200, property:'left', end:-860
   })
 
   scrollorama.animate('.home-contact', {
