@@ -15,11 +15,11 @@ $ ->
   })
 
   scrollorama.animate('.home-content', {
-    duration:200, property:'left', end:-860
+    delay:200, duration:200, property:'left', end:-860
   })
 
   scrollorama.animate('.home-contact', {
-    duration:200, property:'zoom', end:2
+    delay:200, duration:200, property:'zoom', end:2
   })
 
   scrollorama.animate('.home-contact', {
