@@ -1,5 +1,10 @@
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
   /* Tablet */
+
+  #home {
+    background-position: 0% 0% !important;
+  }
+
   #scroll_message {
     top: 30px !important;
   }
@@ -37,6 +42,9 @@ overflow: hidden; height: 993px;
 #home {
   background: image-url('home.jpg') top left no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -84,6 +92,9 @@ overflow: hidden; height: 993px;
 
 #about {
   background: image-url('about2.jpg') left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -119,6 +130,9 @@ overflow: hidden; height: 993px;
 
 #contact {
   background: image-url('contact.jpg') left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
