@@ -8,6 +8,7 @@ overflow: hidden; height: 993px;
 
 #home {
   background: image-url('home.jpg') top left no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -54,7 +55,7 @@ overflow: hidden; height: 993px;
 }
 
 #about {
-  background: image-url('about.jpg') left no-repeat;
+  background: image-url('about2.jpg') left no-repeat;
   background-size: cover;
 }
 
@@ -167,7 +168,8 @@ overflow: hidden; height: 993px;
 }
 
 #show_map {
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
   background: rgb(255, 255, 255);
   background: rgba(255, 255, 255, .7);
   margin-left: 40%;

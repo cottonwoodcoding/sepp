@@ -1,2 +1,84 @@
-%h1 Opportunity#index
-%p Find me in app/views/opportunity/index.html.haml
+%h1#transition_header Appletree Dentistry
+%hr
+.row
+  .building-info.col-lg-8.col-lg-offset-1
+    %h3 Building Info
+    %table.table.table-hover
+      %thead
+        %tr
+          %th Level
+          %th Sqaure Ft.
+          %th Features
+      %tbody
+        %tr
+          %td Main
+          %td 1,564
+          %td Five large operatories, full laboratory, sterilization room, patient restroom, spacious waiting and reception area.
+        %tr
+          %td Top
+          %td 672
+          %td Private office with restroom.
+        %tr
+          %td Lower
+          %td 621
+          %td Break room with staff bath and laundry facilities.
+        %tr#total
+          %td Total
+          %td 2,857
+          %td
+.row
+  .features.col-lg-8.col-lg-offset-1
+    %h3 Features
+    %blockquote
+      %ul#features
+        %li
+          %p Established patient base and active hygiene program and recalls.
+        %li
+          %p
+            2,857 total square feet of office space on 4.3 acres (building for lease, property not for sale).
+        %li
+          %p Landscape view from every room.
+        %li
+          %p Five-year old equipment provided by Beaverstate Dental in Newberg, Oregon.
+.row
+  .photos.col-lg-8.col-lg-offset-1
+    #carousel-generic.carousel.slide{"data-ride" => "carousel"}
+      %ol.carousel-indicators
+        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+        %li{"data-slide-to" => "1", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "2", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "3", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "4", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "5", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "6", "data-target" => "#carousel-generic"}
+        %li{"data-slide-to" => "7", "data-target" => "#carousel-generic"}
+      .carousel-inner
+        .item.active
+          %img{:src => image_url('home.jpg')}/
+        .item
+          %img{:src => image_url('about2.jpg')}/
+        .item
+          %img{:src => image_url('about.jpg')}/
+        .item
+          %img{:src => image_url('inside2.jpg')}/
+        .item
+          %img{:src => image_url('chair.jpg')}/
+        .item
+          %img{:src => image_url('contact.jpg')}/
+        .item
+          %img{:src => image_url('barn.jpg')}/
+        .item
+          %img{:src => image_url('deer.jpg')}/
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-left
+      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-right
+.row
+  .contact-for-purchase.col-lg-8.col-lg-offset-1
+    %h3 Contact:
+    %h3
+      = fa_icon 'phone', text: '503-620-2185'
+    %h3
+      = fa_icon 'envelope'
+      = mail_to 'drsepp@frontier.com'
+
