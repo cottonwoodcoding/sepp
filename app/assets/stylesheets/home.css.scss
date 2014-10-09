@@ -1,8 +1,12 @@
-@media (max-width: 1024px) {
-  /* Tablet */
+@media (max-width: 1269px) {
+  /* Logo falls out of view */
 
   #home {
     background-position: 0% 0% !important;
+  }
+
+  #logo {
+    display: none;
   }
 
   #scroll_message {
@@ -16,7 +20,10 @@
       width: 480px !important;
     }
   }
+}
 
+@media (max-width: 1024px) {
+  /* tablets */
   .about-content-container {
     top: 250px !important;
   }
@@ -27,6 +34,44 @@
 
   #contact_info {
     padding-left: 65px !important;
+  }
+}
+
+@media (max-width: 762px) {
+  /* Hours drops out of view */
+  #about {
+    height: 100% !important;
+  }
+
+  #contact_info {
+    float: none !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center !important;
+  }
+
+  .hours {
+    float: none !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center !important;
+  }
+
+  .hours_header {
+    text-align: center !important;
+  }
+}
+
+@media(max-width: 580px) {
+  #scroll_message {
+    font-size: 25px !important;
+  }
+
+  .home-content {
+    img {
+      height: 100px !important;
+      width: 380px !important;
+    }
   }
 }
 

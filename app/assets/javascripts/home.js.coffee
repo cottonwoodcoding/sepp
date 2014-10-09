@@ -13,7 +13,7 @@ $ ->
       curtainLinks: '.page-scroll'
     })
 
-    if Modernizr.mq('(min-width: 780px)')
+    if Modernizr.mq('(min-width: 1025px)')
 
       scrollorama = $.scrollorama({
         blocks: '.curtains'
