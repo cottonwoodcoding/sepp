@@ -1,3 +1,31 @@
+@media (max-width: 770px) {
+  /* Tablet */
+  #scroll_message {
+    top: 30px !important;
+  }
+
+  .home-content {
+    position: fixed !important;
+    left: 10px !important;
+    img {
+      width: 480px !important;
+    }
+  }
+
+  .about-content-container {
+    top: 250px !important;
+  }
+
+  .doc-image {
+    display: none !important;
+  }
+
+  #contact_info {
+    padding-left: 65px !important;
+  }
+}
+
+
 .navbar {
   z-index: 2000;
 }
@@ -13,7 +41,7 @@ overflow: hidden; height: 993px;
 }
 
 #home .home-content {
-  position: relative; top: 100px; left: 700px;
+  position: relative; top: 100px; left: 675px;
   max-width: 600px;
   font-size: 60px;
 }
@@ -60,7 +88,10 @@ overflow: hidden; height: 993px;
 }
 
 .doc-image {
-  position: relative; top: -300px; left: 25px;
+  position: relative;
+  top: 140px !important;
+  left: 25px;
+  z-index: 0;
   img {
     width: 300px;
     border-radius: 2px;
@@ -76,6 +107,7 @@ overflow: hidden; height: 993px;
   background-color: rgba(255, 255, 255, 0.7);
   max-height: 500px;
   overflow-y: scroll;
+  z-index: 1;
 
   p {
     font-size: 20px;

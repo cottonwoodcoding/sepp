@@ -12,6 +12,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'modernizr-rails'
 
 # Makes running your Rails app easier. Based on the ideas behind 12factor.net
 gem 'rails_12factor'
