@@ -91,6 +91,21 @@
   }
 }
 
+@media(max-width: 450px) {
+  #scroll_message {
+    font-size: 18px !important;
+    margin-top: 5px !important;
+  }
+
+  .home-content {
+    width: 318px !important;
+    height: 100px !important;
+  }
+
+  .map-panel {
+    max-width: 400px !important;
+  }
+}
 
 .navbar {
   z-index: 2000;
