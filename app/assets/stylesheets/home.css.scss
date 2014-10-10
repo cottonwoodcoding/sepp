@@ -80,7 +80,7 @@
 
 @media(max-width: 580px) {
   #scroll_message {
-    font-size: 25px !important;
+    display: none;
   }
 
   .home-content {
@@ -91,19 +91,40 @@
   }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 380px) {
   #scroll_message {
-    font-size: 18px !important;
-    margin-top: 5px !important;
+    display: none;
   }
 
   .home-content {
-    width: 318px !important;
-    height: 100px !important;
+    img {
+      width: 318px !important;
+      height: 100px !important;
+    }
   }
 
   .map-panel {
     max-width: 400px !important;
+  }
+}
+
+@media(max-width: 320px) {
+  #scroll_message {
+    display: none;
+  }
+
+  .home-content {
+    img {
+      width: 250px !important;
+    }
+  }
+
+  #show_map {
+    margin-left: 0px !important;
+  }
+
+  .map-panel {
+    max-width: 320px !important;
   }
 }
 
