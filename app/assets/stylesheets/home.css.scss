@@ -53,10 +53,20 @@
   }
 }
 
+@media (min-width: 762px) {
+  #social_link {
+    display: none !important;
+  }
+}
+
 @media (max-width: 762px) {
   /* Hours drops out of view */
   #about {
     height: 100% !important;
+  }
+
+  .nav-header {
+    display: none
   }
 
   #contact_info {
