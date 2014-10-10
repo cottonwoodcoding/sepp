@@ -1,4 +1,4 @@
 $ ->
   window.onload = ->
-    if window.location.pathname == '/opportunity'
+    if window.location.pathname == '/transition'
       $('.navbar').addClass('hidden')
