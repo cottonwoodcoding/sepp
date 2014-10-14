@@ -55,24 +55,35 @@
         %li{"data-slide-to" => "4", "data-target" => "#carousel-generic"}
         %li{"data-slide-to" => "5", "data-target" => "#carousel-generic"}
         %li{"data-slide-to" => "6", "data-target" => "#carousel-generic"}
-        %li{"data-slide-to" => "7", "data-target" => "#carousel-generic"}
       .carousel-inner
         .item.active
           %img{:src => image_url('home.jpg')}/
+          .carousel-caption
+            %h3 Front view of office
         .item
           %img{:src => image_url('about2.jpg')}/
+          .carousel-caption
+            %h3 Patient waiting area
         .item
           %img{:src => image_url('about.jpg')}/
+          .carousel-caption
+            %h3 Reception area
         .item
           %img{:src => image_url('inside2.jpg')}/
+          .carousel-caption
+            %h3 Waiting area
         .item
           %img{:src => image_url('chair.jpg')}/
+          .carousel-caption
+            %h3 One of five spacious operatories
         .item
           %img{:src => image_url('contact.jpg')}/
+          .carousel-caption
+            %h3 Old barn still on property
         .item
           %img{:src => image_url('barn.jpg')}/
-        .item
-          %img{:src => image_url('deer.jpg')}/
+          .carousel-caption
+            %h3 1930's barn is seen on property
       %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
         %span.glyphicon.glyphicon-chevron-left
       %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
